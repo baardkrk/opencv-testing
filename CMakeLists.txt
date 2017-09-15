@@ -7,3 +7,6 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 
 add_executable(webcam webcam.cpp)
 target_link_libraries(webcam ${OpenCV_LIBS})
+
+add_executable(version cv_ver.cpp)
+target_link_libraries(version ${OpenCV_LIBS})

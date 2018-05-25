@@ -5,8 +5,8 @@ project (cpp_programs)
 find_package (OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-add_executable(webcam webcam.cpp)
+add_executable(webcam src/webcam.cpp)
 target_link_libraries(webcam ${OpenCV_LIBS})
 
-add_executable(version cv_ver.cpp)
+add_executable(version src/cv_ver.cpp)
 target_link_libraries(version ${OpenCV_LIBS})
